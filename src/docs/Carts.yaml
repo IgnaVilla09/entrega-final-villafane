@@ -1,0 +1,220 @@
+paths:
+  /api/carts/mail:
+    get:
+      summary: Enviar correo
+      security:
+        - bearerAuth: []
+        - userAuth: []
+      responses:
+        '200':
+          description: Correo enviado
+        '401':
+          description: No autorizado
+  /api/carts/{id}:
+    get:
+      summary: Ver carrito según ID
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+      responses:
+        '200':
+          description: Carrito encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cart'
+        '404':
+          description: Carrito no encontrado
+        '401':
+          description: No autorizado
+  /api/carts/{cid}/{pid}:
+    post:
+      summary: Añadir productos al carrito
+      security:
+        - bearerAuth: []
+        - userAuth: []
+      parameters:
+        - in: path
+          name: cid
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+        - in: path
+          name: pid
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: number
+                  required: true
+              example:
+                quantity: 2
+      responses:
+        '200':
+          description: Producto añadido al carrito
+        '401':
+          description: No autorizado
+        '404':
+          description: Carrito o producto no encontrado
+  /api/carts/{cartId}/products/{productId}:
+    delete:
+      summary: Eliminar producto del carrito
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: cartId
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+        - in: path
+          name: productId
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      responses:
+        '200':
+          description: Producto eliminado del carrito
+        '401':
+          description: No autorizado
+        '404':
+          description: Carrito o producto no encontrado
+    put:
+      summary: Actualización de ejemplares del producto en carrito
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: cartId
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+        - in: path
+          name: productId
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: number
+                  required: true
+              example:
+                quantity: 5
+      responses:
+        '200':
+          description: Cantidad del producto actualizada
+        '401':
+          description: No autorizado
+        '404':
+          description: Carrito o producto no encontrado
+  /api/carts/{cartId}:
+    delete:
+      summary: Eliminar todos los productos del carrito
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: cartId
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+      responses:
+        '200':
+          description: Todos los productos eliminados del carrito
+        '401':
+          description: No autorizado
+        '404':
+          description: Carrito no encontrado
+  /api/carts/{cartId}/purchase:
+    get:
+      summary: Procesar compra
+      security:
+        - bearerAuth: []
+        - userAuth: []
+      parameters:
+        - in: path
+          name: cartId
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+      responses:
+        '200':
+          description: Compra procesada
+        '401':
+          description: No autorizado
+        '404':
+          description: Carrito no encontrado
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+    userAuth:
+      type: apiKey
+      in: header
+      name: X-User-Auth
+  schemas:
+    Cart:
+      type: object
+      properties:
+        id:
+          type: string
+        products:
+          type: array
+          items:
+            type: object
+            properties:
+              productId:
+                type: string
+              price:
+                type: number
+              quantity:
+                type: number
+        subtotal:
+          type: number
+          default: 0
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - products
+      example:
+        id: "60d21b4967d0d8992e610c85"
+        products:
+          - productId: "60d21b4667d0d8992e610c85"
+            price: 100
+            quantity: 2
+        subtotal: 200
+        createdAt: "2023-07-01T00:00:00Z"
+        updatedAt: "2023-07-01T00:00:00Z"

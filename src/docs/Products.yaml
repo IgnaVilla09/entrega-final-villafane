@@ -1,0 +1,163 @@
+paths:
+  /api/products/:
+    get:
+      summary: Muestra de todos los productos
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Lista de productos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        '401':
+          description: No autorizado
+    post:
+      summary: Creación de productos
+      security:
+        - bearerAuth: []
+        - premiumAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '201':
+          description: Producto creado
+        '401':
+          description: No autorizado
+  /api/products/{pid}:
+    get:
+      summary: Muestra de productos según ID
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: pid
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      responses:
+        '200':
+          description: Producto encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Producto no encontrado
+        '401':
+          description: No autorizado
+    put:
+      summary: Actualización de productos según ID elegido
+      security:
+        - bearerAuth: []
+        - adminAuth: []
+      parameters:
+        - in: path
+          name: pid
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Producto actualizado
+        '401':
+          description: No autorizado
+        '404':
+          description: Producto no encontrado
+    delete:
+      summary: Eliminar productos según ID
+      security:
+        - bearerAuth: []
+        - premiumAuth: []
+      parameters:
+        - in: path
+          name: pid
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      responses:
+        '200':
+          description: Producto eliminado
+        '401':
+          description: No autorizado
+        '404':
+          description: Producto no encontrado
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+    premiumAuth:
+      type: apiKey
+      in: header
+      name: X-Premium-Auth
+    adminAuth:
+      type: apiKey
+      in: header
+      name: X-Admin-Auth
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+          required: true
+        description:
+          type: string
+        price:
+          type: number
+          required: true
+          minimum: 0
+        thumbnail:
+          type: string
+        owner:
+          type: string
+          default: "admin"
+          required: true
+        code:
+          type: number
+          required: true
+        stock:
+          type: number
+          required: true
+          minimum: 1
+        status:
+          type: boolean
+        category:
+          type: string
+      required:
+        - title
+        - price
+        - owner
+        - code
+        - stock
+      example:
+        id: "60d21b4667d0d8992e610c85"
+        title: "Producto de Ejemplo"
+        description: "Descripción del producto de ejemplo"
+        price: 100
+        thumbnail: "http://example.com/thumbnail.jpg"
+        owner: "admin"
+        code: 123456
+        stock: 10
+        status: true
+        category: "Categoría de Ejemplo"

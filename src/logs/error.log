@@ -1,0 +1,302 @@
+{
+  message: 'El usuario es el dueño del producto',
+  level: 'fatal',
+  timestamp: '2024-06-20T15:39:30.779Z'
+}
+{
+  message: 'El usuario es el dueño del producto',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:20:48.528Z'
+}
+{
+  message: 'El usuario es el dueño del producto',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:26:16.464Z'
+}
+{
+  message: 'Error al procesar la solicitud de vista del carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:26:41.853Z'
+}
+{
+  message: 'Error al procesar la solicitud de vista del carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:26:53.924Z'
+}
+{
+  message: 'Error al procesar la solicitud de vista del carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:30:25.693Z'
+}
+{
+  message: 'El usuario es el dueño del producto',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:50:02.248Z'
+}
+{
+  message: 'El usuario es el dueño del producto',
+  level: 'fatal',
+  timestamp: '2024-06-20T16:51:38.657Z'
+}
+{
+  message: `Error al eliminar productoError al encontrar el producto en DB: Cast to ObjectId failed for value "{ _id: 'null' }" (type Object) at path "_id" for model "products"`,
+  level: 'fatal',
+  timestamp: '2024-06-20T16:59:09.670Z'
+}
+{
+  message: 'Administrador sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-20T17:02:35.707Z'
+}
+{
+  message: 'Error: Error al actualizar el usuario: data and hash arguments required\n' +
+    '    at UsuariosManagerMongo.update (file:///D:/desafio-backend-loggers/src/dao/managersMongo/usuariosManager.js:40:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:89:11)',
+  level: 'fatal',
+  timestamp: '2024-06-20T17:13:09.044Z'
+}
+{
+  message: 'Error al añadir producto al carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T17:20:15.727Z'
+}
+{
+  message: 'Error al añadir producto al carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T17:25:15.975Z'
+}
+{
+  message: 'Error al añadir producto al carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:32:56.224Z'
+}
+{
+  message: 'Error al añadir producto al carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:33:57.265Z'
+}
+{
+  message: 'Error al añadir producto al carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:36:30.437Z'
+}
+{
+  message: 'Error al añadir producto al carrito',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:38:17.183Z'
+}
+{
+  message: 'Error: Error al actualizar el usuario: data and hash arguments required\n' +
+    '    at UsuariosManagerMongo.update (file:///D:/desafio-backend-loggers/src/dao/managersMongo/usuariosManager.js:40:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:89:11)',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:42:16.720Z'
+}
+{
+  message: 'Error: Error al actualizar el usuario: data and hash arguments required\n' +
+    '    at UsuariosManagerMongo.update (file:///D:/desafio-backend-loggers/src/dao/managersMongo/usuariosManager.js:40:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:90:13)',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:45:44.428Z'
+}
+{
+  message: 'Error: Error al actualizar el usuario: data and hash arguments required\n' +
+    '    at UsuariosManagerMongo.update (file:///D:/desafio-backend-loggers/src/dao/managersMongo/usuariosManager.js:40:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:90:13)',
+  level: 'fatal',
+  timestamp: '2024-06-20T23:46:38.030Z'
+}
+{
+  message: 'Producto no encontrado con ID',
+  level: 'fatal',
+  timestamp: '2024-06-21T00:21:55.112Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-21T03:07:04.178Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-21T03:33:13.590Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-21T03:33:55.899Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-21T03:34:43.630Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-21T03:35:40.760Z'
+}
+{
+  message: 'ReferenceError: error is not defined\n' +
+    '    at Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:118:31)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'fatal',
+  timestamp: '2024-06-22T02:25:47.113Z'
+}
+{
+  message: 'ReferenceError: error is not defined\n' +
+    '    at Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:118:31)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'fatal',
+  timestamp: '2024-06-22T02:26:29.465Z'
+}
+{
+  message: `CastError: Cast to string failed for value "{ email: 'adminCoder@coder.com' }" (type Object) at path "email" for model "usuarios"\n` +
+    '    at SchemaString.cast (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\schema\\string.js:606:11)\n' +
+    '    at SchemaType.applySetters (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\schemaType.js:1221:12)\n' +
+    '    at SchemaString.castForQuery (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\schema\\string.js:692:17)\n' +
+    '    at cast (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\query.js:4778:12)\n' +
+    '    at Query._castConditions (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\query.js:2199:10)\n' +
+    '    at model.Query._findOne (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\query.js:2513:8)\n' +
+    '    at model.Query.exec (D:\\desafio-backend-loggers\\node_modules\\mongoose\\lib\\query.js:4322:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async UsuariosManagerMongo.getByEmail (file:///D:/desafio-backend-loggers/src/dao/managersMongo/usuariosManager.js:14:12)',
+  level: 'fatal',
+  timestamp: '2024-06-22T03:26:33.297Z'
+}
+{
+  message: 'ReferenceError: jwt is not defined\n' +
+    '    at Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:126:23)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'fatal',
+  timestamp: '2024-06-22T03:48:08.178Z'
+}
+{
+  message: 'ReferenceError: res is not defined\n' +
+    '    at Strategy._verify (file:///D:/desafio-backend-loggers/src/config/passport.config.js:129:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'fatal',
+  timestamp: '2024-06-22T03:48:57.519Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:42:31.688Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:42:36.259Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:42:39.535Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:43:13.125Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:43:32.997Z'
+}
+{
+  message: 'Usuario sin autorización de ejecutar función',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:43:52.329Z'
+}
+{
+  message: 'Error al crear producto, propiedades obligatorias',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:44:48.259Z'
+}
+{
+  message: 'Se han detectado args inválidos.\n' +
+    'Argumentos requeridos:\n' +
+    '    - Nombre: tipo string. Se ingresó \n' +
+    '    - Precio: tipo number. Se ingreso \n' +
+    '    - Code: tipo number. Se ingreso \n' +
+    '    - Stock: tipo number. Se ingreso  \n' +
+    'Argumentos opcionales:\n' +
+    '    - Descripción, imágenes, estado y categoría. Se ingreso {"description":"","owner":"","category":"","thumbnails":"","status":"true"}\n' +
+    '\n' +
+    'Fecha: Tue, 25 Jun 2024 15:44:48 GMT\n' +
+    'Usuario: Ignacio\n' +
+    'Terminal: DESKTOP-TUMNVVU',
+  level: 'fatal',
+  timestamp: '2024-06-25T15:44:48.260Z'
+}
+{
+  message: 'No se encontró token de autenticación',
+  level: 'fatal',
+  timestamp: '2024-07-03T01:29:20.894Z'
+}
+{
+  name: 'JsonWebTokenError',
+  message: 'Error al verificar la autenticación: jwt must be provided',
+  level: 'fatal',
+  stack: 'JsonWebTokenError: jwt must be provided\n' +
+    '    at module.exports [as verify] (D:\\CursoBackend\\desafio-complementario\\node_modules\\jsonwebtoken\\verify.js:60:17)\n' +
+    '    at auth (file:///D:/CursoBackend/desafio-complementario/src/middlewares/auth.js:20:23)\n' +
+    '    at Layer.handle [as handle_request] (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:175:3)',
+  timestamp: '2024-07-03T01:29:20.897Z'
+}
+{
+  message: 'No se encontró token de autenticación',
+  level: 'fatal',
+  timestamp: '2024-07-03T02:34:27.211Z'
+}
+{
+  name: 'JsonWebTokenError',
+  message: 'Error al verificar la autenticación: jwt must be provided',
+  level: 'fatal',
+  stack: 'JsonWebTokenError: jwt must be provided\n' +
+    '    at module.exports [as verify] (D:\\CursoBackend\\desafio-complementario\\node_modules\\jsonwebtoken\\verify.js:60:17)\n' +
+    '    at auth (file:///D:/CursoBackend/desafio-complementario/src/middlewares/auth.js:20:23)\n' +
+    '    at Layer.handle [as handle_request] (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:175:3)',
+  timestamp: '2024-07-03T02:34:27.214Z'
+}
+{
+  message: 'No se encontró token de autenticación',
+  level: 'fatal',
+  timestamp: '2024-07-03T02:34:32.295Z'
+}
+{
+  name: 'JsonWebTokenError',
+  message: 'Error al verificar la autenticación: jwt must be provided',
+  level: 'fatal',
+  stack: 'JsonWebTokenError: jwt must be provided\n' +
+    '    at module.exports [as verify] (D:\\CursoBackend\\desafio-complementario\\node_modules\\jsonwebtoken\\verify.js:60:17)\n' +
+    '    at auth (file:///D:/CursoBackend/desafio-complementario/src/middlewares/auth.js:20:23)\n' +
+    '    at Layer.handle [as handle_request] (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (D:\\CursoBackend\\desafio-complementario\\node_modules\\express\\lib\\router\\index.js:175:3)',
+  timestamp: '2024-07-03T02:34:32.296Z'
+}
